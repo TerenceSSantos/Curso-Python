@@ -1,0 +1,5 @@
+num = int(input('Informe um número entre 1 e 9999: '))
+print('unidade =', num // 1 % 10)
+print('Dezena =', num //10 % 10)
+print('Centena =', num // 100 % 10)
+print('Milhar =', num // 1000 % 10)

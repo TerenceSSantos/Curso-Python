@@ -1,0 +1,1 @@
+Página de projeto com os exercícios resolvidos do aprendizado de Python.
