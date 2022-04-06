@@ -1,0 +1,15 @@
+print('==='*20)
+print('Programa para avaliação de empréstimo')
+print('==='*20)
+vl_casa = float(input('Por favor informe o valor da casa: \nR$'))
+vl_salario = float(input('Por favor informe o valor do salário: \nR$'))
+anos = int(input('Por favor em quantos anos pretende quitar a dívida:\n'))
+print('==='*20)
+vl_prestacao = vl_casa / (anos * 12)
+print('Valor prestação: R$ {:.2f}'.format(vl_prestacao))
+print('30% do salário é R$ {:.2f}'.format(vl_salario * 0.3))
+if vl_prestacao > (vl_salario * 0.3):
+   print('\033[0;31;40mLamento mas seu empréstimo foi negado \033[m')
+   print('\033[0;31;40mSua prestação ficou {:.2f} abaixo do mínimo necessário \033[m'.format(vl_prestacao - (vl_salario * 0.3)))
+else:
+   print('\033[0;32;40mParabéns, seu empréstimo foi aprovado, com uma prestação de R$ {:.2f} !! \033[m'.format(vl_prestacao))
