@@ -12,3 +12,17 @@ elif idade > 19 and idade <= 20:
    print('Atleta de {} ano(s), categoria SENIOR'.format(idade))
 else:
    print('Atleta de {} ano(s), categoria MASTER'.format(idade))
+
+   '''
+   MODO ALTERNATIVO
+   if idade <= 9:
+      print('Categoria MIRIM')
+   elif idade <= 14:
+      print('Categoria INFANTIL')
+   elif idade <= 19:
+      print('Categoria JUNIOR')
+   elif idade <= 20:
+      print('Categora SENIOR')
+   else:
+      print('Categoria MASTER')
+   '''

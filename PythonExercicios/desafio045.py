@@ -1,5 +1,6 @@
 from random import choice
-from sre_parse import parse_template
+from time import sleep
+#from sre_parse import parse_template
 
 print('Vamos jogar Jokenpô - Faça sua escolha')
 computador = choice(['tesoura', 'papel', 'pedra'])
@@ -8,9 +9,15 @@ print('1 = tesoura')
 print('2 = papel')
 print('3 = pedra')
 print('==='* 20)
-escolha = int(input())
+escolha = int(input('Sua escolha: '))
 
-if escolha > 3:
+print('= JO =')
+sleep(0.5)
+print('= KEN =')
+sleep(0.5)
+print('= PÔ =')
+sleep(0.5)
+if escolha > 3 or escolha < 1:
    print('Opção inválida')
 else:
    if escolha == 1:
